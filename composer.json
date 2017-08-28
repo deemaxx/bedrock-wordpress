@@ -1,9 +1,9 @@
 {
-  "name": "roots/bedrock",
+  "name": "deemaxx/bedrock-wordpress",
   "type": "project",
   "license": "MIT",
   "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
-  "homepage": "https://roots.io/bedrock/",
+  "homepage": "https://github.com/deemaxx/bedrock-wordpress/",
   "authors": [
     {
       "name": "Scott Walkinshaw",
@@ -30,6 +30,21 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "ramsaylanier/WordExpress-Plugin",
+        "version": "0.1",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/ramsaylanier/WordExpress-Plugin/archive/master.zip"
+        },
+        "require": {
+          "composer/installers": "v1.4.0"
+        }
+      }
     }
   ],
   "require": {
@@ -38,7 +53,8 @@
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.8.1",
     "oscarotero/env": "^1.1.0",
-    "roots/wp-password-bcrypt": "1.0.0"
+    "roots/wp-password-bcrypt": "1.0.0",
+    "ramsaylanier/WordExpress-Plugin": "0.1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2"
